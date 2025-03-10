@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project name="SalesforceDeployment" default="deploy" basedir=".">
+    
+    <!-- Load properties -->
+    <property file="build.properties"/>
+
+    <!-- Salesforce Deployment Task -->
+    <target name="deploy">
+        <sf:deploy username="${sf.username}" 
+                   password="${sf.password}" 
+                   serverurl="${sf.serverurl}" 
+                   deployRoot="src"
+                   checkOnly="false"
+                   rollbackOnError="true"/>
+    </target>
+
+</project>
