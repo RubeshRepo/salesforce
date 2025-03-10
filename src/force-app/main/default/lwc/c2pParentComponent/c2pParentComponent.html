@@ -1,0 +1,21 @@
+<template>
+    <h1> Child 2 Parent Communication using Custom Event</h1>
+    Parent component message is {msg}
+
+    <lightning-button
+    variant="brand" 
+    label="Open Modal" 
+    title="Open Modal" 
+    onclick={openModal}  
+    > 
+   </lightning-button>
+
+<template if:true={showModal}>
+    <c-c2p-child-component
+    onclosemodal ={closeModalofChild}
+    >
+
+    </c-c2p-child-component>
+</template>
+
+</template>

@@ -1,0 +1,36 @@
+<template>
+
+
+<lightning-card title="For each loop">
+    <template for:each={nameList} for:item="currentname">
+<div key={currentname}> {currentname }</div>
+
+    </template>
+</lightning-card>
+
+<lightning-card title="template iterator loop">
+
+    <template iterator:country={countryCapitals}>
+        <template if:true={country.first}>
+this is for the first
+        </template>
+<div key={country.value.Id}>
+Country Name : {country.value.name}
+Country Capitals: {country.value.capital}
+</div>
+
+<template if:true={country.last}>
+    this is for the last
+            </template>
+    </template>
+</lightning-card>
+
+<lightning-card>
+    <br>
+    A<button type="checkbox" name="optoinA" id="a" value="A" onclick={handleChange}></button><br><br>
+    B<button type="checkbox" name="optoinB" id="b" value="B" onclick={handleChange}></button><br><br>
+    C<button type="checkbox" name="optoinC" id="c" value="C" onclick={handleChange}></button><br><br>
+</lightning-card>
+
+
+</template>

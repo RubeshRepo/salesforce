@@ -1,0 +1,16 @@
+<template>
+    <h1> Hello</h1>
+    {message}
+    <h2> Name is {name} and Current Age is {age}</h2>
+
+    <template for:each={country} for:item="item">
+
+        <div key={item.name}>
+            {item.name} - {item.capital}
+        </div>
+    </template>
+    <h5>
+        this message is coming bcz of event happend from parent component
+        {receivedFromEvent}
+    </h5>
+</template>

@@ -1,0 +1,31 @@
+<template>
+    <h1>Parent to child communication</h1>
+    The input value is {inputValue}
+    <c-p2c-child-component
+    message="message from parent component"
+    name = "Rubesh kumar"
+    country = {countryList}
+    received-from-event = {inputValue}
+    >        
+    </c-p2c-child-component>
+    <lightning-input
+    type="text"
+    variant="brand" 
+    label="Brand" 
+    title="Send Data to Child" 
+    onkeyup={handleChange}
+    value= {inputValue}
+    class="slds-m-left_x-small"
+    >
+
+    </lightning-input >
+
+    <lightning-button
+    variant="brand" 
+    label="Reset Age" 
+    title="Reset Age" 
+    onclick={resetAge}  
+    >
+
+    </lightning-button>
+</template>

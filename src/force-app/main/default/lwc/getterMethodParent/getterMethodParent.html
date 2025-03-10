@@ -1,0 +1,23 @@
+<template>
+
+    <lightning-card  
+    title="Parent Component Data before Modifying"
+    >
+    <h5>Name is {employee.name}</h5>
+    <h4> Age is {employee.age}</h4>
+    <h3>
+       Door number = {employee.Address.DoorNumber}    
+       Pincode is = {employee.Address.PinCode}
+   </h3> 
+    </lightning-card>
+
+
+
+
+
+    <c-setter-method-child
+    emp-details={employee}
+    >
+
+    </c-setter-method-child>
+</template>

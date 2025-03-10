@@ -1,0 +1,16 @@
+<template>
+
+<lightning-card title="Create HMTL template">
+
+    <div class="slds-p-around_medium">
+        <lightning-button variant="success" label="Create HTML Template" title="Create HTML" onclick={genTemplate} class="slds-m-left_x-small"></lightning-button>
+    </div>
+</lightning-card>
+<c-create-question-template-child-component
+get-record-id={recordId}
+get-html-template={htmlTemplate}
+get-object-a-p-i-name={objectApiName}
+>
+
+</c-create-question-template-child-component>
+</template>
