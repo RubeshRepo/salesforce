@@ -6,7 +6,7 @@ public class ChatGPT {
 
 //https://www.salesforceben.com/integrating-openais-chatgpt-with-the-salesforce-appexchange/
 
-//rubesh git 014
+//rubesh git 015
     
     
     
